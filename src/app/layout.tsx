@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Providers } from "@/redux/Providers";
+import Link from "next/link"; // Import Link
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -22,19 +23,19 @@ export default function RootLayout({
               <h2 className="text-xl font-bold mb-4">Sidebar</h2>
               <ul className="space-y-3">
                 <li>
-                  <a href="/" className="block p-2 hover:bg-gray-700 rounded">
+                  <Link href="/" className="block p-2 hover:bg-gray-700 rounded">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/menus" className="block p-2 hover:bg-gray-700 rounded">
+                  <Link href="/menus" className="block p-2 hover:bg-gray-700 rounded">
                     Menus
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/settings" className="block p-2 hover:bg-gray-700 rounded">
+                  <Link href="/settings" className="block p-2 hover:bg-gray-700 rounded">
                     Settings
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </aside>

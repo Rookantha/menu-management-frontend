@@ -1,4 +1,4 @@
-import { createSlice, createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
+import { createSlice, createAsyncThunk} from "@reduxjs/toolkit";
 import axios from "axios";
 
 interface MenuItem {
@@ -18,7 +18,7 @@ loading: false,
 };
 
 // Load backend URL from environment variables
-const BASE_URL = process.env.BACKEND_URL || "http://localhost:3002/menu";
+const BASE_URL = process.env.BACKEND_URL || "http://menu-management.us-east-1.elasticbeanstalk.com/menu";
 
 // Fetch all menus from API
 export const fetchMenus = createAsyncThunk("menu/fetchMenus", async () => {

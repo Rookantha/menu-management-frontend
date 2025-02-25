@@ -6,7 +6,7 @@ import { AppDispatch } from "@/redux/store";
 import { addItem, updateItem, deleteItem } from "@/redux/features/menuSlice";
 
 // Import icons from Heroicons
-import { PlusCircleIcon, PencilIcon, CheckIcon, TrashIcon, XCircleIcon } from "@heroicons/react/24/solid";
+import { PlusCircleIcon, PencilIcon, CheckIcon, TrashIcon} from "@heroicons/react/24/solid";
 
 interface MenuItem {
   id: number;
