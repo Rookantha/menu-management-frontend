@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import axios from "axios";
 
-const BASE_URL = process.env.BACKEND_URL || "http://menu-management.us-east-1.elasticbeanstalk.com/menu";
+const BASE_URL = process.env.BACKEND_URL || "https://menu-management-backend-plum.vercel.app/menu";
 
 export async function GET() {
   const res = await axios.get(BASE_URL);

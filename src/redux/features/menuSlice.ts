@@ -18,7 +18,7 @@ loading: false,
 };
 
 // Load backend URL from environment variables
-const BASE_URL = process.env.BACKEND_URL || "http://menu-management.us-east-1.elasticbeanstalk.com/menu";
+const BASE_URL = process.env.BACKEND_URL || "https://menu-management-backend-plum.vercel.app/menu";
 
 // Fetch all menus from API
 export const fetchMenus = createAsyncThunk("menu/fetchMenus", async () => {
